@@ -1,0 +1,5 @@
+<h2>SignUp</h2>
+<%= form_for(@user, :url => do_user_sign_up_url) do |user| %>
+  <%= render "cdgsubengine/account/users/form", :user => user %>
+  <%= user.submit "Sign up" %>
+<% end %>

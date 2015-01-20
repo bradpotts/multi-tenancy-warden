@@ -1,0 +1,31 @@
+=== CDGSUBEngine (Houser Version)
+
+An engine that handles user authentication, subscription and account data separation functions for rails based apps. This version separates account data using houser gem.
+
+EEnvironment
+* Ruby 2.0.0+
+* Rails 4.1.0+
+
+Gem Dependencies (Included)
+* Houser Gem
+* Warden Gem
+* Bcrypt Gem
+* Dynamic_Form Gem
+
+User Authentication System
+* User Registration
+* User Authentication
+
+Account & Data Management
+* Sub-domain Restriction
+* Sub-domain Validation
+* Separated Account Data
+
+---InProgress---
+
+Plan & Payment System
+* Stripe Payment Integration
+* Plan/Subscription Stripe Integration
+* Plan Switching & Management
+
+This project rocks and uses MIT-LICENSE.

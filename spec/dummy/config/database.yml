@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: cdgsubengine_development 
+  min_messages: warning
+
+test:
+  adapter: postgresql
+  database: cdgsubengine_test 
+  min_messages: warning
