@@ -1,7 +1,6 @@
 require "warden"
 require "dynamic_form"
-require "apartment"
-require "apartment/elevators/subdomain"
+require "houser"
 
 module Cdgsubengine
   class Engine < ::Rails::Engine
@@ -33,8 +32,9 @@ module Cdgsubengine
       end
     end
 
-    initializer "cdgsubengine.middleware.apartment" do
-      Rails.application.config.middleware.use Apartment::Elevators::Subdomain
+    initializer 'cdgsubengine.middleware.houser' do
+      Rails.application.config.middleware.use Houser::Middleware,
+        :class_name => 'Cdgsubengine::Account'
     end
   end
 end

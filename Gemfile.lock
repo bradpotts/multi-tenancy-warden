@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    cdg-subengine (0.0.1)
-      apartment (= 0.25.1)
+    cdg-subengine-houser (0.0.1)
       bcrypt (= 3.1.7)
       dynamic_form (= 1.1.4)
+      houser (= 1.0.2)
       pg
       rails (~> 4.1.1)
       warden (= 1.2.3)
@@ -38,9 +38,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    apartment (0.25.1)
-      activerecord (>= 3.1.2, < 4.2)
-      rack (>= 1.3.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     builder (3.2.2)
@@ -57,6 +54,8 @@ GEM
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
     hike (1.2.3)
+    houser (1.0.2)
+      rack
     i18n (0.7.0)
     json (1.8.1)
     mail (2.6.3)
@@ -67,7 +66,7 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
-    pg (0.17.1)
+    pg (0.18.1)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -127,7 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara (= 2.3.0)
-  cdg-subengine!
+  cdg-subengine-houser!
   database_cleaner (= 1.3.0)
   factory_girl (= 4.4.0)
   rspec-rails (= 3.0.1)
