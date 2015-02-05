@@ -1,4 +1,4 @@
-=== CDGSUBEngine (Houser Version)
+=== CDGSUBEngine
 
 A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project. 
 This version uses the Houser gem and method for account data separation using Postgre.
