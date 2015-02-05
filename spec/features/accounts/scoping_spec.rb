@@ -1,8 +1,12 @@
 require "rails_helper"
+require "cdgsubengine/testing_support/factories/account_factory"
+require "cdgsubengine/testing_support/authentication_helpers"
 
 feature "Account scoping" do
-  let!(:account_a) { FactoryGirl.create(:account_with_schema) }
-  let!(:account_b) { FactoryGirl.create(:account_with_schema) }
+  include Cdgsubengine::TestingSupport::AuthenticationHelpers
+
+  let!(:account_a) { FactoryGirl.create(:account) }
+  let!(:account_b) { FactoryGirl.create(:account) }
 
   before do
     Thing.scoped_to(account_a).create(:name => "Account A's Thing")

@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Cdgsubengine</title>
-  <%= stylesheet_link_tag    "cdgsubengine/application", media: "all" %>
-  <%= javascript_include_tag "cdgsubengine/application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<% flash.each do |k,v| %>
-	<div class='flash <%= k %>'><%= v %>
-	</div>
-<% end %>
-  <% if user_signed_in? %>
-	Signed in as <%= current_user.email %>
-<% end %>
-<%= yield %>
-
-</body>
+  <head>
+    <title>Cdgsubengine</title>
+    <%= stylesheet_link_tag    "cdgsubengine/application", media: "all" %>
+    <%= javascript_include_tag "cdgsubengine/application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <% flash.each do |k,v| %>
+      <div class='flash <%= k %>'><%= v %></div>
+    <% end %>
+    <%= render "cdgsubengine/shared/login" %>
+    <%= yield %>
+  </body>
 </html>

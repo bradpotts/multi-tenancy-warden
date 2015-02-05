@@ -1,8 +1,10 @@
 require "rails_helper"
+require 'cdgsubengine/testing_support/factories/account_factory'
+require 'cdgsubengine/testing_support/subdomain_helpers'
 
 feature "User sign in" do
-  extend SubdomainHelpers
-  let!(:account) { FactoryGirl.create(:account_with_schema) }
+  extend Cdgsubengine::TestingSupport::SubdomainHelpers
+  let!(:account) { FactoryGirl.create(:account) }
   let(:sign_in_url) { "http://#{account.subdomain}.example.com/sign_in" }
   let(:root_url) { "http://#{account.subdomain}.example.com/" }
 
@@ -40,7 +42,7 @@ feature "User sign in" do
     end
 
     scenario "cannot sign in if not a part of this subdomain" do
-      other_account = FactoryGirl.create(:account_with_schema)
+      other_account = FactoryGirl.create(:account)
       visit cdgsubengine.root_url(:subdomain => account.subdomain)
       expect(page.current_url).to eq(sign_in_url)
       expect(page).to have_content("Please sign in.")

@@ -2,7 +2,11 @@ module Cdgsubengine
   class Account < ActiveRecord::Base
     belongs_to :owner, :class_name => "Cdgsubengine::User"
     accepts_nested_attributes_for :owner
+
+    belongs_to :plan, :class_name => "Cdgsubengine::Plan"
+
     validates :subdomain, :presence => true, :uniqueness => true
+    validates :name, presence: true
 
     has_many :members, :class_name => "Cdgsubengine::Member"
     has_many :users, :through => :members
@@ -26,8 +30,8 @@ module Cdgsubengine
       account
     end
 
-    def create_schema
-      Apartment::Tenant.create(subdomain)
+    def owner?(user)
+      owner == user
     end
   end
 end

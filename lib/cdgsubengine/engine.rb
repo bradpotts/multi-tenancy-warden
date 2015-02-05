@@ -1,6 +1,7 @@
 require "warden"
 require "dynamic_form"
 require "houser"
+require "braintree"
 
 module Cdgsubengine
   class Engine < ::Rails::Engine
@@ -21,6 +22,15 @@ module Cdgsubengine
         manager.serialize_from_session do |id|
           Cdgsubengine::User.find(id)
         end
+      end
+    end
+
+    initializer "cdgsubengine.middleware.fake_braintree_redirect" do
+      if Rails.env.test?
+        require "fake_braintree_redirect"
+        Rails.application.config.middleware.insert_before \
+          Warden::Manager,
+          FakeBraintreeRedirect
       end
     end
 

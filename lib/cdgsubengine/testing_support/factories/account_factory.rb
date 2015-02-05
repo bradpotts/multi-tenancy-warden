@@ -1,3 +1,5 @@
+require "cdgsubengine/testing_support/factories/user_factory"
+
 FactoryGirl.define do
   factory :account, :class => Cdgsubengine::Account do
     sequence(:name) { |n| "Test Account ##{n}" }
@@ -6,12 +8,6 @@ FactoryGirl.define do
 
     after(:create) do |account|
       account.users << account.owner
-    end
-
-    factory :account_with_schema do
-      after(:create) do |account|
-        account.create_schema
-      end
     end
   end
 end
