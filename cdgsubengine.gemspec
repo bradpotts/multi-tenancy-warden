@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   s.add_dependency "houser", "1.0.2"
   
   # Payments Processing
-  s.add_dependency "braintree", "2.35.0"
+  s.add_dependency "braintree"
 
   # Dependencies for Development Environment
   s.add_development_dependency "rspec-rails", "3.0.1"
