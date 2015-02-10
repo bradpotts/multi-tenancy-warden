@@ -18,11 +18,18 @@ Gem::Specification.new do |s|
 
   # Dependencies for Production Environment
   s.add_dependency "rails", "~> 4.1.1"
+  
+  # Login and Authetication System
   s.add_dependency "bcrypt", "3.1.7"
   s.add_dependency "warden", "1.2.3"
+  
+  # Data and Data Seperation
   s.add_dependency "dynamic_form", "1.1.4"
   s.add_dependency "pg"
   s.add_dependency "houser", "1.0.2"
+  
+  # Payments Processing
+  s.add_dependency "braintree", "2.35.0"
 
   # Dependencies for Development Environment
   s.add_development_dependency "rspec-rails", "3.0.1"
