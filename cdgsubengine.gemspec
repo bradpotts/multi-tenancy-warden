@@ -5,13 +5,13 @@ require "cdgsubengine/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "cdg-subengine-houser"
+  s.name        = "cdg-subengine"
   s.version     = Cdgsubengine::VERSION
   s.authors     = ["Brad Potts - CoastDigitalGroup"]
   s.email       = ["brad@coastdigitalgroup.com"]
   s.homepage    = "http://coastdigitalgroup.com"
   s.summary     = "An engine that handles user authentication, subscription and account data separation functions for rails based apps."
-  s.description = "An engine that handles user authentication, subscription and account data separation functions for rails based apps. This version uses houser gem."
+  s.description = "An engine that handles user authentication, subscription and account data separation functions for rails based apps."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
