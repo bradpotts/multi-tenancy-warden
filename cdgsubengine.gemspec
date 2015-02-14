@@ -5,13 +5,13 @@ require "cdgsubengine/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "cdg-subengine"
+  s.name        = "cdgsubengine"
   s.version     = Cdgsubengine::VERSION
   s.authors     = ["Brad Potts - CoastDigitalGroup"]
   s.email       = ["brad@coastdigitalgroup.com"]
   s.homepage    = "http://coastdigitalgroup.com"
-  s.summary     = "An engine that handles user authentication, subscription and account data separation functions for rails based apps."
-  s.description = "An engine that handles user authentication, subscription and account data separation functions for rails based apps."
+  s.summary     = "A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project."
+  s.description = "A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
