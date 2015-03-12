@@ -1,3 +1,7 @@
+# Ruby Related
+.rvmrc
+
+# Rails Related
 .bundle/
 log/*.log
 pkg/
@@ -18,26 +22,20 @@ spec/dummy/.sass-cache
 /test/version_tmp/
 /tmp/
 
-## Specific to RubyMotion:
+# Ruby Motion
 .dat*
 .repl_history
 build/
 
-## Documentation cache and generated files:
+# Aptana
+*.project
+
+# Documentations and Cache
 /.yardoc/
 /_yardoc/
 /doc/
 /rdoc/
 
-## Environment normalisation:
+## Environment
 /.bundle/
 /lib/bundler/man/
-
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
-
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
