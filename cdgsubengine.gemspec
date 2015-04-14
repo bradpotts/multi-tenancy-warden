@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   # Dependencies for Production Environment
-  s.add_dependency "rails", "~> 4.1.1"
+  s.add_dependency "rails", "~> 4.2.0"
   
   # Login and Authetication System
   s.add_dependency "bcrypt", "3.1.7"
