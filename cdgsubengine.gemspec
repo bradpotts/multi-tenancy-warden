@@ -5,7 +5,7 @@ require "cdgsubengine/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "cdgsubengine"
+  s.name        = "cdg-subengine"
   s.version     = Cdgsubengine::VERSION
   s.authors     = ["Brad Potts - CoastDigitalGroup"]
   s.email       = ["brad@coastdigitalgroup.com"]
