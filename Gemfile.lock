@@ -112,7 +112,7 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
-    sprockets (3.0.0)
+    sprockets (3.0.1)
       rack (~> 1.0)
     sprockets-rails (2.2.4)
       actionpack (>= 3.0)

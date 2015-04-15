@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: cdgsubengine_development 
+  database: cdgsubengine_test 
   min_messages: warning
 
 test:
