@@ -10,14 +10,14 @@ Gem::Specification.new do |s|
 	s.authors     = ["Brad Potts - CoastDigitalGroup"]
 	s.email       = ["brad@coastdigitalgroup.com"]
 	s.homepage    = "http://coastdigitalgroup.com"
-	s.summary     = "A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project."
-	s.description = "A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project."
+	s.summary     = "This engine takes the task out of rebuilding a user and sub-domain authentication system for separate data accounts."
+	s.description = "This engine takes the task out of rebuilding a user and sub domain authentication system for separate data accounts."
 	s.license     = "MIT"
 
 
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-	s.add_dependency "rails", "~> 4.2.1"
+	s.add_dependency "rails", "~> 4.1.1"
 	s.add_dependency "bcrypt", "3.1.7"
 	s.add_dependency "warden", "1.2.3"
 	s.add_dependency "dynamic_form", "1.1.4"
