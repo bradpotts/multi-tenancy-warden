@@ -29,7 +29,5 @@ Stripe Plan & Payment System
 * Plan Switching & Management
 
 ---License---
+
 This project rocks and uses MIT-LICENSE.
-
-
-
