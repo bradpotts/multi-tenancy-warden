@@ -1,22 +1,5 @@
 === CDGSUBEngine
-
-A user registration/login and data separation engine for ruby on rails apps. This takes the tedious task having to rebuild user registration and data handling models for every rails project.
-
----Installation---
-
-Step 1 - Add cdgsubengine to your GEMFILE
-gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
-
-Step 2 - For subdomain functions add this line to the top of the rotues.rb
-require 'cdgsubengine/constraints/subdomain_required'
-
-Step 3 - Add this line near the bottom of the rotues.rb (before the final end) to mount the engine.
-mount Cdgsubengine::Engine, :at => '/'
-
-Step 4 - In terminal run commands.
-bundle install
-rake railties:install:migrations
-rake db:migrate
+A simple user management and data separation engine for ruby on rails apps.
 
 ---Operating Environment---
 Environment
