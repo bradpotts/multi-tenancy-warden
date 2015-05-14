@@ -1,5 +1,10 @@
-=== CDGSUBEngine
-A simple user management and data separation engine for ruby on rails apps.
+=== CDG-SUBEngine
+A user registration and multi-tenancy engine for ruby on rails apps.
+
+Required in gemfile
+gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
+
+
 
 ---Operating Environment---
 Environment
