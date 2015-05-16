@@ -8,7 +8,7 @@
     if user_signed_in?
       @current_user ||= begin
         user_id = env["warden"].user(:scope => :user)
-        Cdgsubengine::User.find(user_id)
+        Cdgsubengine::User.find_by_id(user_id)
       end
     end
   end
