@@ -2,8 +2,8 @@
 A user authetication and multi-tenancy engine for ruby on rails application.
 
 ===== Step 1: Required in gemfile
-* Remote - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
-* Local - gem 'cdgsubengine', path: 'cdgsubengine' (download into root project folder)
+* Remote Github - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
+* Local Folder  - gem 'cdgsubengine', path: 'cdgsubengine'
 
 ------
 
