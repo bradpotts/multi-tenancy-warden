@@ -29,13 +29,4 @@ Stripe Plan & Payment System
 
 This project rocks and uses MIT-LICENSE and is open sourced. 
 
-Notice: Some changes can break production applications. 
-
-
-
-it is strongly suggested to run a fork of your own or run the engine locally within your rails project.
-
-
-
-
-For production use it is strongly suggested to run a fork of your own or run 
+Notice: Some major changes can break applications and we cannot be held liable. Under production, load the engine locally within the root of your project instead of using github repository.
