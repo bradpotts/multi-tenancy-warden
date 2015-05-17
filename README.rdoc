@@ -1,32 +1,23 @@
 === CDG-SUBEngine
-A user registration and multi-tenancy engine for ruby on rails apps.
+A user authetication and multi-tenancy engine for ruby on rails application.
 
-Required in gemfile
+===== Step 1: Required in gemfile
 gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
 
+------
 
+===== Security and Login
+* Warrant Authetication
 
----Operating Environment---
-Environment
-* Ruby 2.0.0+
-* Rails 4.1.0+
-
-Gem Dependencies (Included)
-* Houser Gem
-* Warden Gem
-* Bcrypt Gem
-* Dynamic_Form Gem
-
-User Authentication System
-* User Registration
-* User Authentication
-
-Account & Data Management
+===== Account Data Management
 * Sub-domain Restriction
 * Sub-domain Validation
 * Separated Account Data
 
----InProgress---
+===== User UI and Interaction
+* Gravatar Support
+
+==== InProgress
 
 Stripe Plan & Payment System
 * Stripe Payment Integration
