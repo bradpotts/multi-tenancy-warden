@@ -8,7 +8,8 @@ A user authetication and multi-tenancy engine for ruby on rails application.
 ------
 
 ===== Security and Login
-* Warrant Authetication
+* Uses Warden for Authetication
+* Authetication through Subdomain
 
 ===== Account Data Management
 * Sub-domain Restriction
