@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   # Main Files and Security
 	s.add_dependency "rails", "~> 4.2.2"
-	s.add_dependency "bcrypt", "3.1.10"
+	s.add_dependency "bcrypt", "3.1.3"
 	s.add_dependency "warden", "1.2.3"
   
   # Database and Data Seperization

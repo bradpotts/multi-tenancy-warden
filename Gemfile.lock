@@ -11,7 +11,7 @@ PATH
   remote: .
   specs:
     cdgsubengine (1.1.3)
-      bcrypt (= 3.1.10)
+      bcrypt (= 3.1.3)
       braintree (= 2.40.0)
       dynamic_form (= 1.1.4)
       gravtastic
@@ -59,7 +59,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
-    bcrypt (3.1.10)
+    bcrypt (3.1.3)
     braintree (2.40.0)
       builder (>= 2.0.0)
     builder (3.2.2)
