@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   # Main Files and Security
-	s.add_dependency "rails", "~> 4.2.1"
+	s.add_dependency "rails", "~> 4.2.2"
 	s.add_dependency "bcrypt", "3.1.10"
 	s.add_dependency "warden", "1.2.3"
   
