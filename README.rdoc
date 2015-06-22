@@ -2,7 +2,6 @@
 {<img src="https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-warden/badges/gpa.svg" />}[https://codeclimate.com/github/CoastDigitalGroup/cdg-subengine-warden]
 {<img src="https://coveralls.io/repos/CoastDigitalGroup/cdg-subengine-warden/badge.svg" alt="Coverage Status" />}[https://coveralls.io/r/CoastDigitalGroup/cdg-subengine-warden]
 {<img src="https://travis-ci.org/CoastDigitalGroup/cdg-subengine-warden.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/CoastDigitalGroup/cdg-subengine-warden]
-
 ===== CDG-SUBEngine - With Warden Authetication
 Multi-tenancy rails engine that authenticates and seperates users data through basecamp style sub-domain logins. This edition uses warden for authentication.
 
