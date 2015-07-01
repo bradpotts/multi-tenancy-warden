@@ -6,7 +6,7 @@
 Multi-tenancy rails engine that authenticates and seperates users data through basecamp style sub-domain logins. This edition uses warden for authentication.
 
 ===== Step 1: Required in gemfile
-* Remote Github - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine.git'
+* Remote Github - gem 'cdgsubengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine-warden.git'
 * Download to Root Folder - gem 'cdgsubengine', path: 'cdgsubengine'
 
 ===== Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
