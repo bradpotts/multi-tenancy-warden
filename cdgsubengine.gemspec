@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 	s.email       = ["brad@coastdigitalgroup.com"]
 	s.homepage    = "http://coastdigitalgroup.com"
 	s.summary     = "CoastDigitalGroup subengine warden edition gem adds a simple multi-tenancy functionality to any rails project."
-	s.description = "CoastDigitalGroup subengine warden edition gem adds a simple multi-tenancy functionality to any rails project. The warden edition is a multi-tenancy login engine at it's most basic level. Features basic authentication and subdomain data scoping and login pages at the subdomain level."
+	s.description = "CoastDigitalGroup subengine warden edition gem adds a simple multi-tenancy functionality to any rails project. The warden edition is a multi-tenancy login engine at it's most basic level perfect for customization."
 	s.license     = "MIT"
 
 
@@ -19,15 +19,15 @@ Gem::Specification.new do |s|
 
   # Main Files and Security
 	s.add_dependency 'rails', '>= 4.2.3'
-	s.add_dependency 'bcrypt', '~>3.1.10'
-	s.add_dependency 'warden', '~> 1.2.3'
+	s.add_dependency 'bcrypt'
+	s.add_dependency 'warden'
   
 	# Database and Data Seperization
-	s.add_dependency 'pg', '~>0.18.0', '>= 0.18.2'
+	s.add_dependency 'pg'
 	s.add_dependency "houser", "1.0.2"
 
 	# User and UI Elements
-	s.add_dependency 'gravtastic', '~> 3.2.6'
+	s.add_dependency 'gravtastic'
   
 	# On its way out
 	s.add_dependency 'braintree', '2.40.0'
