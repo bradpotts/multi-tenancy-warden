@@ -14,21 +14,20 @@ Gem::Specification.new do |s|
 	s.description = "Subengine multi-tenant gem for ruby on rails warden authentication system."
 	s.license     = "MIT"
 
-
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  # Main Files and Security
+	# Main Files and Security
 	s.add_dependency 'rails', '>= 4.2.3'
 	s.add_dependency 'bcrypt'
 	s.add_dependency 'warden'
-  
+
 	# Database and Data Seperization
 	s.add_dependency 'pg'
 	s.add_dependency "houser", "1.0.2"
 
 	# User and UI Elements
 	s.add_dependency 'gravtastic'
-  
+
 	# On its way out
 	s.add_dependency 'braintree', '2.40.0'
 	s.add_dependency 'dynamic_form', '1.1.4'
