@@ -14,7 +14,7 @@ module Subengine
 				else
 					redirect_to root_path
 				end
-			else
+			else
 				flash[:error] = "Account could not be updated."
 				render :edit
 			end
