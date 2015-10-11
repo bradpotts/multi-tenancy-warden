@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140830020346) do
 
-  create_table "cdgsubengine_accounts", force: :cascade do |t|
+  create_table "subengine_accounts", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -23,16 +23,16 @@ ActiveRecord::Schema.define(version: 20140830020346) do
     t.string   "braintree_subscription_id"
   end
 
-  add_index "cdgsubengine_accounts", ["subdomain"], name: "index_cdgsubengine_accounts_on_subdomain"
+  add_index "subengine_accounts", ["subdomain"], name: "index_subengine_accounts_on_subdomain"
 
-  create_table "cdgsubengine_members", force: :cascade do |t|
+  create_table "subengine_members", force: :cascade do |t|
     t.integer  "account_id"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "cdgsubengine_plans", force: :cascade do |t|
+  create_table "subengine_plans", force: :cascade do |t|
     t.string   "name"
     t.float    "price"
     t.string   "braintree_id"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20140830020346) do
     t.datetime "updated_at"
   end
 
-  create_table "cdgsubengine_users", force: :cascade do |t|
+  create_table "subengine_users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
     t.datetime "created_at"

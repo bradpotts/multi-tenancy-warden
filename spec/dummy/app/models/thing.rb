@@ -1,6 +1,6 @@
 class Thing < ActiveRecord::Base
-  extend Cdgsubengine::ScopedTo
-  def self.scoped_to(account)
-    where(:account_id => account.id)
-  end
+	extend Subengine::ScopedTo
+	def self.scoped_to(account)
+		where(:account_id => account.id)
+	end
 end

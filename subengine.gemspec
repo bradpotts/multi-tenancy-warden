@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "cdgsubengine/version"
+require "subengine/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-	s.name        = "cdgsubengine"
-	s.version     = Cdgsubengine::VERSION
+	s.name        = "subengine"
+	s.version     = Subengine::VERSION
 	s.authors     = ["BradPotts"]
-	s.email       = ["brad@coastdigitalgroup.com"]
+	s.email       = ["bradley.j.potts@gmail.com"]
 	s.homepage    = "http://coastdigitalgroup.com"
-	s.summary     = "CoastDigitalGroup subengine warden edition gem adds a simple multi-tenancy functionality to any rails project."
-	s.description = "CoastDigitalGroup subengine warden edition gem adds a simple multi-tenancy functionality to any rails project. The warden edition is a multi-tenancy login engine at it's most basic level perfect for customization."
+	s.summary     = "Multi-Tenant Rails Engine Using Warden."
+	s.description = "Subengine multi-tenant gem for ruby on rails warden authentication system."
 	s.license     = "MIT"
 
 

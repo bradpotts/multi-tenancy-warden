@@ -1,11 +1,11 @@
 require "rails_helper"
 
-describe Cdgsubengine::AccountsController do
+describe Subengine::AccountsController do
 	context "creates the account's schema" do
-		let!(:account) { Cdgsubengine::Account.new }
+		let!(:account) { Subengine::Account.new }
 
 		before do
-			expect(Cdgsubengine::Account).to receive(:create_with_owner).
+			expect(Subengine::Account).to receive(:create_with_owner).
 			and_return(account)
 
 			allow(account).to receive(:valid?) { true }
@@ -14,11 +14,11 @@ describe Cdgsubengine::AccountsController do
 
 		specify do
 			post :create, :account => { :name => "First Account" },
-			:use_route => :cdgsubengine
+			:use_route => :subengine
 		end
 
 		def setup
-			@routes = Cdgsubengine::Engine.routes
+			@routes = Subengine::Engine.routes
 		end
 	end
 end
