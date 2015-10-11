@@ -6,20 +6,26 @@
 ### CDG Subengine Documentation (Warden Edition)
 CDG subengine-warden multi-tenant gem features user registration and multi-tenant subdomain login using Warden to authenticate users.
 
-#### Step 1: Required in gemfile
-   gem 'subengine-warden', '~> 2.0.0'  
+#### Step 1 - Add Subengine to your gemfile
+    gem 'subengine-warden', '~> 2.0.0'
+    bundle exec install
 
-#### Step 2: Add below line to load requried file to the top of routes file. (routes.rb)
-   require "cdgsubengine/constraints/subdomain_required"  
+#### Step 2 - Add and migrate subengine database tables
+    rake railties:install:migrations  
+    rake db:migrate
 
-#### Step 3: Add contraints to routes that requires multitenancy function between the two lines below . (routes.rb)
-   constraints(Cdgsubengine::Constraints::SubdomainRequired) do  
+#### Step 3 - Mount the Engine in your Routes File
+Add this line at the end of the routes file.  
+  
+    mount Subengine::Engine, :at => '/'
 
-   end
+#### Step 4 - Constrain the routs you want secured
+All the routes you want to have multi-tenacy login functions goes in between the constraints block.
 
-#### Step 4: Copy below line insert at the bottom of the routes file. (routes.rb)
-   mount Cdgsubengine::Engine, :at => '/'  
-
+    constraints(Subengine::Constraints::SubdomainRequired) do  
+      # Routes Requiring Security & Multi-Tenancy Routes    
+    end 
+  
 #### Security and Login
 Uses Warden for Authetication  
 Authetication through Subdomain  
