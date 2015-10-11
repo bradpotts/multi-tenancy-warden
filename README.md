@@ -20,15 +20,15 @@ Add this line at the end of the routes file.
     mount Subengine::Engine, :at => '/'
 
 #### Step 4 - Constrain the routs you want secured
-All the routes you want to have multi-tenacy login functions goes in between the constraints block.
+All the routes you want to have multi-tenancy login functions goes in between the constraints block.
 
     constraints(Subengine::Constraints::SubdomainRequired) do  
       # Routes Requiring Security & Multi-Tenancy Routes    
     end 
   
 #### Security and Login
-Uses Warden for Authetication  
-Authetication through Subdomain  
+Uses Warden for Authentication  
+Authentication through Subdomain  
 
 #### Account Data Management
 Sub-domain Restriction  
@@ -38,7 +38,7 @@ Separated Account Data
 #### User UI and Interaction
 Gravatar Support  
 
-#### InProgress
+#### In Progress
 Stripe Plan & Payment System  
 Stripe Payment Integration  
 Plan/Subscription Stripe Integration  
