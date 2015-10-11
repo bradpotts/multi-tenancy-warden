@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-warden.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-subengine-warden)
 
 ### CDG Subengine Documentation (Warden Edition)
-CDG subengine-warden multi-tenant gem features user registration and multi-tenant login using Warden to authenticate users.
+CDG subengine-warden multi-tenant gem features user registration and multi-tenant subdomain login using Warden to authenticate users.
 
 #### Step 1: Required in gemfile
 * Remote Github - gem 'subengine', git: 'http://github.com/CoastDigitalGroup/cdg-subengine-warden.git'
