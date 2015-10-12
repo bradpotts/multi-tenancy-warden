@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 	s.email       = ["bradley.j.potts@gmail.com"]
 	s.homepage    = "http://coastdigitalgroup.com"
 	s.summary     = "Multi-Tenant Rails Engine Using Warden."
-  s.description = "CDG subengine-devise gem adds multi-tenant and account management features to rails Devise gem. Plataformatec Devise and required custom Twitter Bootstrap Devise views included."
+  s.description = "CDG subengine-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem."
 	s.license     = "MIT"
 
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    subengine-warden (2.0.1)
+    subengine-warden (2.0.2)
       bcrypt
       braintree (= 2.40.0)
       dynamic_form (= 1.1.4)
