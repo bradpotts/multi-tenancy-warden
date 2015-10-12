@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/subengine-warden.svg)](https://badge.fury.io/rb/subengine-warden)
 
 ### CDG Subengine Documentation (Warden Edition)
-CDG subengine-warden multi-tenant gem features user registration and multi-tenant subdomain login using Warden to authenticate users.
+CDG subengine-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
 
 #### Step 1 - Add Subengine to your gemfile
     gem 'subengine-warden', '~> 2.0.0'
