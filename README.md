@@ -1,10 +1,9 @@
-[![security](https://hakiri.io/github/CoastDigitalGroup/cdg-mtwarden-warden/master.svg)](https://hakiri.io/github/CoastDigitalGroup/cdg-mtwarden-warden/master)
-[![Code Climate](https://codeclimate.com/github/CoastDigitalGroup/cdg-mtwarden-warden/badges/gpa.svg)](https://codeclimate.com/github/CoastDigitalGroup/cdg-mtwarden-warden)
-[![Build Status](https://travis-ci.org/CoastDigitalGroup/cdg-mtwarden-warden.svg?branch=master)](https://travis-ci.org/CoastDigitalGroup/cdg-mtwarden-warden)
-[![Gem Version](https://badge.fury.io/rb/mtwarden-warden.svg)](https://badge.fury.io/rb/mtwarden-warden)
+[![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master)
+[![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden)
+[![Build Status](https://travis-ci.org/PHCNetworks/multi-tenancy-warden.svg?branch=master)](https://travis-ci.org/PHCNetworks/multi-tenancy-warden)
 
-### CDG Mtwarden Documentation (Warden Edition)
-CDG mtwarden-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
+### Mtwarden(MultiTenancyWarden) Documentation
+PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
 
 #### Step 1 - Add Mtwarden to your gemfile
 	gem 'mtwarden', '~> 2.0.0'
