@@ -25,7 +25,7 @@ Add this line at the end of the routes.rb file.
   
 	mount Mtwarden::Engine, :at => '/'  
   
-#### Step 5 - Constrain the routs you want secured  
+#### Step 5 - Constrain the routes you want secured in your routes.rb file.
 All the routes you want to have multi-tenancy login functions goes in between the constraints block.  
 
 	constraints(Mtwarden::Constraints::SubdomainRequired) do  
