@@ -10,14 +10,14 @@ GIT
 PATH
   remote: .
   specs:
-    mtwarden (2.1.0)
+    mtwarden (2.2.0)
       bcrypt
       braintree (= 2.40.0)
       dynamic_form (= 1.1.4)
       gravtastic
       houser (= 1.0.2)
       pg
-      rails (>= 4.2.3)
+      rails
       warden
 
 GEM
@@ -190,6 +190,7 @@ DEPENDENCIES
   fake_braintree_redirect!
   mtwarden!
   rspec-rails (= 3.0.1)
+  simplecov
   sqlite3
 
 BUNDLED WITH
