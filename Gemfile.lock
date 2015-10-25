@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    subengine-warden (2.0.2)
+    mtwarden-warden (2.0.2)
       bcrypt
       braintree (= 2.40.0)
       dynamic_form (= 1.1.4)
@@ -190,7 +190,7 @@ DEPENDENCIES
   fake_braintree_redirect!
   rspec-rails (= 3.0.1)
   sqlite3
-  subengine-warden!
+  mtwarden-warden!
 
 BUNDLED WITH
    1.10.6

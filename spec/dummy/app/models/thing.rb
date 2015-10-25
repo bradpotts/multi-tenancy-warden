@@ -1,5 +1,5 @@
 class Thing < ActiveRecord::Base
-	extend Subengine::ScopedTo
+	extend Mtwarden::ScopedTo
 	def self.scoped_to(account)
 		where(:account_id => account.id)
 	end

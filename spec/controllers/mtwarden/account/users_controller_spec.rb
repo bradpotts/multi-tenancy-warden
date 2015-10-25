@@ -1,0 +1,7 @@
+require 'rails_helper'
+
+module Mtwarden
+	RSpec.describe Account::UsersController, :type => :controller do
+
+	end
+end

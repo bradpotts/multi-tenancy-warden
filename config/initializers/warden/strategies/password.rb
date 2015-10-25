@@ -8,7 +8,7 @@ Warden::Strategies.add(:password) do
 	end
 
 	def authenticate!
-		return fail! unless account = Subengine::Account.find_by(subdomain: subdomain)
+		return fail! unless account = Mtwarden::Account.find_by(subdomain: subdomain)
 		return fail! unless user = account.users.find_by(email: params["user"]["email"])
 		return fail! unless user.authenticate(params["user"]["password"])
 		success! user

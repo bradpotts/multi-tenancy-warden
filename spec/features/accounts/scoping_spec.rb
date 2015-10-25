@@ -1,9 +1,9 @@
 require "rails_helper"
-require "subengine/testing_support/factories/account_factory"
-require "subengine/testing_support/authentication_helpers"
+require "mtwarden/testing_support/factories/account_factory"
+require "mtwarden/testing_support/authentication_helpers"
 
 feature "Account scoping" do
-	include Subengine::TestingSupport::AuthenticationHelpers
+	include Mtwarden::TestingSupport::AuthenticationHelpers
 
 	let!(:account_a) { FactoryGirl.create(:account) }
 	let!(:account_b) { FactoryGirl.create(:account) }

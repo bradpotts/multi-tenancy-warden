@@ -1,5 +1,5 @@
 require "rails_helper"
-require "subengine/testing_support/factories/account_factory"
+require "mtwarden/testing_support/factories/account_factory"
 
 feature "User signup" do
 	let!(:account) { FactoryGirl.create(:account) }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CoastDigitalGroup Mtwarden Warden Edition</title>
+		<%= stylesheet_link_tag    "mtwarden/application", media: "all" %>
+		<%= javascript_include_tag "mtwarden/application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<% flash.each do |k,v| %>
+			<div class='flash <%= k %>'><%= v %></div>
+		<% end %>
+		<%= render "mtwarden/shared/login" %>
+		<%= yield %>
+	</body>
+</html>

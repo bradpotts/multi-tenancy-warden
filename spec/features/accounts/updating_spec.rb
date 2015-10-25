@@ -1,9 +1,9 @@
 require "rails_helper"
-require "subengine/testing_support/factories/account_factory"
-require "subengine/testing_support/authentication_helpers"
+require "mtwarden/testing_support/factories/account_factory"
+require "mtwarden/testing_support/authentication_helpers"
 
 feature "Accounts" do
-	include Subengine::TestingSupport::AuthenticationHelpers
+	include Mtwarden::TestingSupport::AuthenticationHelpers
 	let(:account) { FactoryGirl.create(:account) }
 	let(:root_url) { "http://#{account.subdomain}.example.com/" }
 
@@ -32,7 +32,7 @@ feature "Accounts" do
 
 		context "with plans" do
 			let!(:starter_plan) do
-				Subengine::Plan.create(
+				Mtwarden::Plan.create(
 					:name  => "Starter",
 					:price => 9.95,
 					:braintree_id => "starter"
@@ -40,7 +40,7 @@ feature "Accounts" do
 			end
 
 			let!(:extreme_plan) do
-				Subengine::Plan.create(
+				Mtwarden::Plan.create(
 					:name  => "Extreme",
 					:price => 19.95,
 					:braintree_id => "extreme"
@@ -95,7 +95,7 @@ feature "Accounts" do
 				select "Extreme", :from => 'Plan'
 				click_button "Update Account"
 				expect(page).to have_content("Account updated successfully.")
-				plan_url = subengine.plan_account_url(
+				plan_url = mtwarden.plan_account_url(
 					:plan_id => extreme_plan.id,
 					:subdomain => account.subdomain)
 				expect(page.current_url).to eq(plan_url)
@@ -125,7 +125,7 @@ feature "Accounts" do
 				select "Extreme", :from => 'Plan'
 				click_button "Update Account"
 				expect(page).to have_content("Account updated successfully.")
-				plan_url = subengine.plan_account_url(
+				plan_url = mtwarden.plan_account_url(
 					:plan_id => extreme_plan.id,
 					:subdomain => account.subdomain)
 				expect(page.current_url).to eq(plan_url)
@@ -181,7 +181,7 @@ feature "Accounts" do
 		end
 
 		scenario "cannot edit an account's information" do
-			visit subengine.edit_account_url(:subdomain => account.subdomain)
+			visit mtwarden.edit_account_url(:subdomain => account.subdomain)
 			expect(page).to have_content("You are not allowed to do that.")
 		end
 	end

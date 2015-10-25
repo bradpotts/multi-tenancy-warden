@@ -1,7 +1,7 @@
-require "subengine/constraints/subdomain_required"
+require "mtwarden/constraints/subdomain_required"
 
-Subengine::Engine.routes.draw do
-	constraints(Subengine::Constraints::SubdomainRequired) do
+Mtwarden::Engine.routes.draw do
+	constraints(Mtwarden::Constraints::SubdomainRequired) do
 		scope :module => "account" do
 			root :to => "dashboard#index", :as => :account_root
 			get "/sign_in", :to => "sessions#new", :as => :sign_in

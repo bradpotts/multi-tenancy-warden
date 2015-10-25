@@ -2,29 +2,29 @@ require "rails_helper"
 
 feature "Accounts" do
 	scenario "creating an account" do
-		visit subengine.root_path
+		visit mtwarden.root_path
 		click_link "Account Sign Up"
 		fill_in "Name", :with => "Test"
 		fill_in "Subdomain", :with => "test"
-		fill_in "Email", :with => "subengine@example.com"
+		fill_in "Email", :with => "mtwarden@example.com"
 		fill_in "Password", :with => 'password'
 		fill_in "Password confirmation", :with => "password"
 		click_button "Create Account"
 
 		success_message = "Your account has been successfully created."
 		expect(page).to have_content(success_message)
-		expect(page).to have_content("Signed in as subengine@example.com")
+		expect(page).to have_content("Signed in as mtwarden@example.com")
 		expect(page.current_url).to eq("http://test.example.com/")
 	end
 
 	scenario "Ensure subdomain uniqueness" do
-		Subengine::Account.create!(:subdomain => "test", :name => "Test")
+		Mtwarden::Account.create!(:subdomain => "test", :name => "Test")
 
-		visit subengine.root_path
+		visit mtwarden.root_path
 		click_link "Account Sign Up"
 		fill_in "Name", :with => "Test"
 		fill_in "Subdomain", :with => "test"
-		fill_in "Email", :with => "subengine@example.com"
+		fill_in "Email", :with => "mtwarden@example.com"
 		fill_in "Password", :with => "password"
 		fill_in "Password confirmation", :with => 'password'
 		click_button "Create Account"
@@ -35,11 +35,11 @@ feature "Accounts" do
 	end
 
 	scenario "Subdomain with restricted name" do
-		visit subengine.root_path
+		visit mtwarden.root_path
 		click_link "Account Sign Up"
 		fill_in "Name", :with => "Test"
 		fill_in "Subdomain", :with => "admin"
-		fill_in "Email", :with => "subengine@example.com"
+		fill_in "Email", :with => "mtwarden@example.com"
 		fill_in "Password", :with => "password"
 		fill_in "Password confirmation", :with => "password"
 		click_button "Create Account"
@@ -50,11 +50,11 @@ feature "Accounts" do
 	end
 
 	scenario "Subdomain with invalid name" do
-		visit subengine.root_path
+		visit mtwarden.root_path
 		click_link "Account Sign Up"
 		fill_in "Name", :with => "Test"
 		fill_in "Subdomain", :with => "<admin>"
-		fill_in "Email", :with => "subengine@example.com"
+		fill_in "Email", :with => "mtwarden@example.com"
 		fill_in "Password", :with => "password"
 		fill_in "Password confirmation", :with => "password"
 		click_button "Create Account"

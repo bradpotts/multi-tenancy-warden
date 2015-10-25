@@ -1,9 +1,9 @@
 require "rails_helper"
-require 'subengine/testing_support/factories/account_factory'
-require 'subengine/testing_support/subdomain_helpers'
+require 'mtwarden/testing_support/factories/account_factory'
+require 'mtwarden/testing_support/subdomain_helpers'
 
 feature "User sign in" do
-	extend Subengine::TestingSupport::SubdomainHelpers
+	extend Mtwarden::TestingSupport::SubdomainHelpers
 	let!(:account) { FactoryGirl.create(:account) }
 	let(:sign_in_url) { "http://#{account.subdomain}.example.com/sign_in" }
 	let(:root_url) { "http://#{account.subdomain}.example.com/" }
@@ -20,7 +20,7 @@ feature "User sign in" do
 		end
 
 		scenario "attempts sign in with an invalid password and fails" do
-			visit subengine.root_url(:subdomain => account.subdomain)
+			visit mtwarden.root_url(:subdomain => account.subdomain)
 			expect(page.current_url).to eq(sign_in_url)
 			expect(page).to have_content("Please sign in.")
 			fill_in "Email", :with => account.owner.email
@@ -31,7 +31,7 @@ feature "User sign in" do
 		end
 
 		scenario "attempts sign in with an invalid email address and fails" do
-			visit subengine.root_url(:subdomain => account.subdomain)
+			visit mtwarden.root_url(:subdomain => account.subdomain)
 			expect(page.current_url).to eq(sign_in_url)
 			expect(page).to have_content("Please sign in.")
 			fill_in "Email", :with => "foo@example.com"
@@ -43,7 +43,7 @@ feature "User sign in" do
 
 		scenario "cannot sign in if not a part of this subdomain" do
 			other_account = FactoryGirl.create(:account)
-			visit subengine.root_url(:subdomain => account.subdomain)
+			visit mtwarden.root_url(:subdomain => account.subdomain)
 			expect(page.current_url).to eq(sign_in_url)
 			expect(page).to have_content("Please sign in.")
 			fill_in "Email", :with => other_account.owner.email

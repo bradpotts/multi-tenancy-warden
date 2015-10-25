@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "subengine"
+require "mtwarden"
 
 module Dummy
 	class Application < Rails::Application
