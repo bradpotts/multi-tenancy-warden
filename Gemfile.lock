@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    mtwarden-warden (2.0.2)
+    mtwarden (2.1.0)
       bcrypt
       braintree (= 2.40.0)
       dynamic_form (= 1.1.4)
@@ -188,9 +188,9 @@ DEPENDENCIES
   database_cleaner (= 1.3.0)
   factory_girl (= 4.4.0)
   fake_braintree_redirect!
+  mtwarden!
   rspec-rails (= 3.0.1)
   sqlite3
-  mtwarden-warden!
 
 BUNDLED WITH
    1.10.6
