@@ -1,13 +1,12 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden)
-[![Build Status](https://travis-ci.org/PHCNetworks/multi-tenancy-warden.svg?branch=master)](https://travis-ci.org/PHCNetworks/multi-tenancy-warden)
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
   
 ### Mtwarden(MultiTenancyWarden) Documentation  
 PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
   
 #### Step 1 - Add Mtwarden to your gemfile  
-	gem 'mtwarden', '~> 2.2', '>= 2.2.5'
+	gem 'mtwarden', '~> 2.2', '>= 2.2.6'
 	bundle exec install  
   
 #### Step 2 - Add and migrate mtwarden database tables  
