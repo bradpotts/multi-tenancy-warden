@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
 	s.homepage    = "http://www.phcnetworks.net"
 	s.summary     = "Multi-Tenant Rails Engine Using Devise."
 	s.description = "mtwarden adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
+	s.license     = "GPL-3.0"
 
-	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+	s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
 
 	# Main Files and Security
 	s.add_dependency 'rails', '~> 4.2', '>= 4.2.5.1'
