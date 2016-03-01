@@ -23,13 +23,13 @@ Gem::Specification.new do |s|
 
 	# Database and Data Seperization
 	s.add_dependency 'pg', '~> 0.18.4'
-	s.add_dependency "houser", "1.0.2"
+	s.add_dependency 'houser', '~> 2.0'
 
 	# User and UI Elements
 	s.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
 	# On its way out
-	s.add_dependency 'braintree', '2.40.0'
+	s.add_dependency 'braintree', '~> 2.58'
 	s.add_dependency 'dynamic_form', '1.1.4'
 
 	# Development
