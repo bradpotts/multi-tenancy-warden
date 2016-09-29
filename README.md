@@ -1,6 +1,6 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden)
-
+[![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-warden.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-warden)
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
   
 ### Mtwarden(MultiTenancyWarden) Documentation  
