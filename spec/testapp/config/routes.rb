@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Mtwarden::Engine => "/mtwarden"
+  mount Mtwarden::Engine => "/"
 end
