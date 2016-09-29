@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
 	spec.name        = "mtwarden"
 	spec.version     = Mtwarden::VERSION
 	spec.authors     = ["BradPotts"]
-	spec.email       = ["brad.potts@phcnetworks.net"]
-	spec.homepage    = "http://www.phcnetworks.net"
+	spec.email       = ["developers@phcnetworks.net"]
+	spec.homepage    = "https://webdev.phcnetworks.net"
 	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
 	spec.description = "mtwarden adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
 	spec.license     = "MIT"
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.10'
 	spec.add_dependency 'warden', '~> 1.2', '>= 1.2.5'
 	spec.add_dependency 'houser', '~> 2.0'
-	spec.add_dependency 'braintree', '~> 2.66'
+	spec.add_dependency 'braintree', '~> 2.40'
 	spec.add_dependency 'dynamic_form', '1.1.4'
 
 	# UI & Frontend Elements

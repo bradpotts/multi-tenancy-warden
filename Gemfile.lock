@@ -1,10 +1,19 @@
+GIT
+  remote: git://github.com/radar/fake_braintree_redirect.git
+  revision: 861bfd845c126ab2d8412a138be93ab9b98c8a1f
+  branch: master
+  specs:
+    fake_braintree_redirect (1.0.0)
+      braintree (~> 2.40.0)
+      rack
+
 PATH
   remote: .
   specs:
     mtwarden (3.0.0)
       bcrypt (~> 3.1, >= 3.1.10)
       bootstrap-sass (~> 3.3, >= 3.3.7)
-      braintree (~> 2.66)
+      braintree (~> 2.40)
       dynamic_form (= 1.1.4)
       font-awesome-rails (~> 4.6, >= 4.6.3.1)
       gravtastic (~> 3.2, >= 3.2.6)
@@ -67,7 +76,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    braintree (2.66.0)
+    braintree (2.40.0)
       builder (>= 2.0.0)
     builder (3.2.2)
     byebug (9.0.5)
@@ -266,6 +275,7 @@ DEPENDENCIES
   coveralls (~> 0.8.10)
   database_cleaner (~> 1.5, >= 1.5.3)
   factory_girl_rails (~> 4.7)
+  fake_braintree_redirect!
   faker (~> 1.6, >= 1.6.6)
   launchy (~> 2.4, >= 2.4.3)
   letter_opener (~> 1.4, >= 1.4.1)
