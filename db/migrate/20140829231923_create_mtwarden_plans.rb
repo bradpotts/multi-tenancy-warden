@@ -1,4 +1,4 @@
-class CreateMtwardenPlans < ActiveRecord::Migration
+class CreateMtwardenPlans < ActiveRecord::Migration[5.0]
 	def change
 		create_table :mtwarden_plans do |t|
 			t.string :name
