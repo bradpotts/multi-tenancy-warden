@@ -7,7 +7,6 @@ require "braintree"
 
 module Mtwarden
 	class Engine < ::Rails::Engine
-
 		isolate_namespace Mtwarden
 
 		config.generators do |g|
@@ -48,6 +47,5 @@ module Mtwarden
 			Rails.application.config.middleware.use Houser::Middleware,
 			:class_name => 'Mtwarden::Account'
 		end
-
 	end
 end
