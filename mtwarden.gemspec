@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.10'
 	spec.add_dependency 'warden', '~> 1.2', '>= 1.2.5'
 	spec.add_dependency 'houser', '~> 2.0'
-	spec.add_dependency 'braintree', '2.40.0'
+	spec.add_dependency 'braintree', '~> 2.66'
 	spec.add_dependency 'dynamic_form', '1.1.4'
 
 	# UI & Frontend Elements
