@@ -14,8 +14,9 @@ PATH
       bcrypt (~> 3.1, >= 3.1.10)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       braintree (~> 2.40)
+      country_select (~> 2.5, >= 2.5.2)
       dynamic_form (= 1.1.4)
-      font-awesome-rails (~> 4.6, >= 4.6.3.1)
+      font-awesome-rails (~> 4.7)
       gravtastic (~> 3.2, >= 3.2.6)
       houser (~> 2.0)
       jquery-rails (~> 4.2, >= 4.2.1)
@@ -225,7 +226,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (2.53.4)
+    selenium-webdriver (3.0.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
@@ -268,8 +269,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug (~> 9.0, >= 9.0.5)
-  capybara (~> 2.9, >= 2.9.1)
+  byebug (~> 9.0, >= 9.0.6)
+  capybara (~> 2.10, >= 2.10.1)
   coveralls (~> 0.8.10)
   database_cleaner (~> 1.5, >= 1.5.3)
   factory_girl_rails (~> 4.7)
@@ -280,10 +281,10 @@ DEPENDENCIES
   minitest (~> 5.9, >= 5.9.1)
   mtwarden!
   rspec-rails (~> 3.5, >= 3.5.2)
-  selenium-webdriver (~> 2.53, >= 2.53.4)
+  selenium-webdriver (~> 3.0)
   shoulda-matchers (~> 3.1, >= 3.1.1)
   simplecov (~> 0.12.0)
-  sqlite3 (~> 1.3, >= 1.3.11)
+  sqlite3 (~> 1.3, >= 1.3.12)
 
 BUNDLED WITH
    1.12.5
