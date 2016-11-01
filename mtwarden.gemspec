@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
 	spec.authors     = ["BradPotts"]
 	spec.email       = ["developers@phcnetworks.net"]
 	spec.homepage    = "https://webdev.phcnetworks.net"
-	spec.summary     = "Multi-Tenant Rails Engine Using Devise."
-	spec.description = "mtwarden adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
+	spec.summary     = "Multi-Tenant Rails Engine Using Warden."
+	spec.description = "mtwarden(3) adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
 	spec.license     = "MIT"
 
 	spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'pg', '~> 0.19.0'
 
 	# PHC Engines
-	spec.add_dependency 'phctitleseo', '~> 3.3', '>= 3.3.4'
-	spec.add_dependency 'phcnotifi', '~> 3.3', '>= 3.3.4'
+	spec.add_dependency 'phctitleseo', '~> 3.3', '>= 3.3.5'
+	spec.add_dependency 'phcnotifi', '~> 3.3', '>= 3.3.5'
 	spec.add_dependency 'responders', '~> 2.3'
 
 	# Security, Subscriptions & Forms
