@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mtwarden (3.0.2)
+    mtwarden (3.0.3)
       bcrypt (~> 3.1, >= 3.1.10)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       braintree (~> 2.40)

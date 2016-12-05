@@ -7,7 +7,7 @@
 PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
   
 #### Step 1 - Add Mtwarden to your gemfile  
-	gem 'mtwarden', '~> 3.0', '>= 3.0.1'
+	gem 'mtwarden', '~> 3.0', '>= 3.0.3'
 	bundle exec install  
   
 #### Step 2 - Add and migrate mtwarden database tables  
