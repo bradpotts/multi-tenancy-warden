@@ -1,12 +1,12 @@
 PATH
   remote: .
   specs:
-    mtwarden (3.1.1)
+    mtwarden (3.1.2)
       bcrypt (~> 3.1, >= 3.1.10)
       bootstrap-sass (~> 3.3, >= 3.3.7)
       braintree (~> 2.40)
       carrierwave (~> 0.11.2)
-      cloudinary (~> 1.2, >= 1.2.4)
+      cloudinary (~> 1.3)
       codemirror-rails (~> 5.16)
       country_select (~> 3.0)
       dynamic_form (= 1.1.4)
@@ -98,7 +98,7 @@ GEM
       mimemagic (>= 0.3.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
-    cloudinary (1.2.4)
+    cloudinary (1.3.0)
       aws_cf_signer
       rest-client
     codemirror-rails (5.16.0)
