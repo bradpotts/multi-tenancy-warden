@@ -8,7 +8,7 @@ PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user
   
 #### Step 1 - Add Mtwarden to your gemfile and run command   
   
-	gem 'mtwarden'
+	gem 'mtwarden', '~> 3.3'
 	bundle exec install  
   
 #### Step 2 - Add and migrate mtwarden database tables  
