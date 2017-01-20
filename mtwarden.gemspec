@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
 
 	# API Dependencies
-	spec.add_dependency 'oj', '~> 2.18'
+	spec.add_dependency 'oj', '~> 2.18', '>= 2.18.1'
 	spec.add_dependency 'rabl', '~> 0.13.1'
 	spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
 	spec.add_dependency 'responders', '~> 2.3'
@@ -54,7 +54,7 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.10'
 	spec.add_dependency 'warden', '~> 1.2', '>= 1.2.5'
 	spec.add_dependency 'houser', '~> 2.0'
-	spec.add_dependency 'braintree', '~> 2.70'
+	spec.add_dependency 'braintree', '~> 2.72'
 	spec.add_dependency 'dynamic_form', '1.1.4'
 
 	# Development & Testing Dependencies
