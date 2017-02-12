@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
 	spec.add_dependency 'paper_trail', '~> 6.0', '>= 6.0.2'
 
 	# PHCEngines & Theme Dependencies
-	spec.add_dependency 'phcadmin3', '~> 1.3', '>= 1.3.2'
-	spec.add_dependency 'phctitleseo', '~> 3.6', '>= 3.6.2'
-	spec.add_dependency 'phcnotifi', '~> 3.6', '>= 3.6.2'
+	spec.add_dependency 'phcadmin3', '~> 1.3', '>= 1.3.4'
+	spec.add_dependency 'phctitleseo', '~> 3.6', '>= 3.6.3'
+	spec.add_dependency 'phcnotifi', '~> 3.6', '>= 3.6.3'
 
 	# UI & Frontend Dependencies
 	spec.add_dependency 'jquery-rails', '~> 4.2', '>= 4.2.2'
@@ -68,7 +68,7 @@ Gem::Specification.new do |spec|
 
 	spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
 	spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.7'
+	spec.add_development_dependency 'selenium-webdriver', '~> 3.0', '>= 3.0.8'
 
 	# Extra Development & Testing Dependencies
 	spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
