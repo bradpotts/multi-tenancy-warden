@@ -1,10 +1,12 @@
 class CreateMtwardenMembers < ActiveRecord::Migration[5.0]
-	def change
-		create_table :mtwarden_members do |t|
-			t.integer :account_id
-			t.integer :user_id
+  def change
+  create_table :mtwarden_members do |t|
 
-			t.timestamps
-		end
-	end
+      t.integer :account_id
+      t.integer :user_id
+      
+      t.timestamps
+
+    end
+  end
 end

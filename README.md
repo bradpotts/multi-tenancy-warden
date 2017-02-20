@@ -4,7 +4,7 @@
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
   
 ### Mtwarden(MultiTenancyWarden) Documentation  
-PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions and login through subdomains using Warden authentication gem.  
+PHC mtwarden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions, and login through subdomains using Warden authentication gem.  
   
 #### Step 1 - Add Mtwarden to your gemfile and run command   
   
@@ -12,6 +12,7 @@ PHC mtwarden-warden gem adds a separate multi-tenant layer that handles all user
 	bundle exec install  
   
 #### Step 2 - Add and migrate mtwarden database tables  
+
 	rake railties:install:migrations  
 	rake db:migrate  
 
