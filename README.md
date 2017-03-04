@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden)
 [![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-warden.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-warden)
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-bluw.svg)](https://github.com/PHCNetworks/multi-tenancy-warden/blob/master/MIT-LICENSE)
   
 ### Mtwarden(MultiTenancyWarden) Documentation  
 PHC mtwarden gem adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions, and login through subdomains using Warden authentication gem.  
