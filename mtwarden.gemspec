@@ -44,11 +44,11 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'responders', '~> 2.3'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.4'
+  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.5'
 
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.0'
-  spec.add_dependency 'cloudinary', '~> 1.5', '>= 1.5.2'
+  spec.add_dependency 'cloudinary', '~> 1.6'
 
   # Extra Security, Subscriptions & Forms
   spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.10'
@@ -68,7 +68,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
   spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.2', '>= 3.2.2'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.3'
 
   # Extra Development & Testing Dependencies
   spec.add_development_dependency 'minitest', '~> 5.9', '>= 5.9.1'
@@ -77,5 +77,3 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'letter_opener', '~> 1.4', '>= 1.4.1'
 
 end
-
-
