@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
 
   # Upload & Media Dependencies
   spec.add_dependency 'carrierwave', '~> 1.0'
-  spec.add_dependency 'cloudinary', '~> 1.6'
+  spec.add_dependency 'cloudinary', '~> 1.7'
 
   # Extra Security, Subscriptions & Forms
   spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.11'

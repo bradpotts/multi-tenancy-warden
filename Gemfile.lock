@@ -6,7 +6,7 @@ PATH
       bootstrap-sass (~> 3.3, >= 3.3.7)
       braintree (~> 2.74)
       carrierwave (~> 1.0)
-      cloudinary (~> 1.6)
+      cloudinary (~> 1.7)
       country_select (~> 3.0)
       dynamic_form (= 1.1.4)
       font-awesome-rails (~> 4.7, >= 4.7.0.1)
