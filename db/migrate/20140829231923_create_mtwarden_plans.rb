@@ -5,7 +5,7 @@ class CreateMtwardenPlans < ActiveRecord::Migration[5.0]
       t.string :name
       t.float :price
       t.string :braintree_id
-      
+
       t.timestamps
 
     end

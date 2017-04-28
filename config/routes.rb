@@ -22,7 +22,7 @@ Mtwarden::Engine.routes.draw do
       :as => :confirm_plan_account
     end
   end
-  
+
   root "dashboard#index"
   get "/sign_up", :to => "accounts#new", :as => :sign_up
   post "/accounts", :to => "accounts#create", :as => :accounts
