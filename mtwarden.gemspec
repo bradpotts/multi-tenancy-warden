@@ -19,56 +19,70 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   # Main Dependencies
-  spec.add_dependency 'rails', '~> 5.0', '>= 5.0.2'
-  spec.add_dependency 'pg', '~> 0.20.0'
-  spec.add_dependency 'paper_trail', '~> 7.0', '>= 7.0.1'
+  spec.add_dependency 'rails'
+  spec.add_dependency 'pg'
+  spec.add_dependency 'paper_trail'
 
   # UI & Frontend Dependencies
-  spec.add_dependency 'jquery-rails', '~> 4.3', '>= 4.3.1'
-  spec.add_dependency 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-  spec.add_dependency 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-  spec.add_dependency 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
-  spec.add_dependency 'sass-rails', '~> 5.0', '>= 5.0.6'
-  spec.add_dependency 'country_select', '~> 3.0'
-  spec.add_dependency 'gravtastic', '~> 3.2', '>= 3.2.6'
+  spec.add_dependency 'jquery-rails'
+  spec.add_dependency 'jquery-ui-rails'
+
+  spec.add_dependency 'bootstrap-sass'
+  spec.add_dependency 'font-awesome-rails'
+  spec.add_dependency 'sass-rails'
+
+  spec.add_dependency 'country_select'
+  spec.add_dependency 'gravtastic'
 
   # WYSIWYG Editor Dependencies
-  spec.add_dependency 'tinymce-rails', '~> 4.5', '>= 4.5.6'
-
-  # PHCEngines & Theme Dependencies
-  spec.add_dependency 'phcadmin3', '~> 2.1', '>= 2.1.2'
-  spec.add_dependency 'phctitleseo', '~> 5.1', '>= 5.1.2'
-  spec.add_dependency 'phcnotifi', '~> 4.1', '>= 4.1.2'
+  spec.add_dependency 'tinymce-rails'
 
   # API Dependencies
-  spec.add_dependency 'oj', '~> 2.18', '>= 2.18.5'
-  spec.add_dependency 'rabl', '~> 0.13.1'
-  spec.add_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
-  spec.add_dependency 'responders', '~> 2.3'
+  spec.add_dependency 'oj'
+  spec.add_dependency 'rabl'
+  spec.add_dependency 'multi_json'
+  spec.add_dependency 'responders'
 
   # Upload & Media Dependencies
-  spec.add_dependency 'carrierwave', '~> 1.0'
-  spec.add_dependency 'cloudinary', '~> 1.7'
+  spec.add_dependency 'carrierwave'
+  spec.add_dependency 'cloudinary'
 
-  # Extra Security, Subscriptions & Forms
-  spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.11'
-  spec.add_dependency 'warden', '~> 1.2', '>= 1.2.7'
-  spec.add_dependency 'houser', '~> 2.0'
-  spec.add_dependency 'braintree', '~> 2.74'
-  spec.add_dependency 'dynamic_form', '1.1.4'
+  # URLS
+  spec.add_dependency 'friendly_id'
+
+  # PHCEngine Dependencies
+  spec.add_dependency 'phctitleseo'
+  spec.add_dependency 'phcnotifi'
+  spec.add_dependency 'phcpresspro'
+
+  # PHCTheme Dependencies
+  spec.add_dependency 'phctheme1'
+  spec.add_dependency 'phctheme2'
+
+  # PHCAdmin Dependencies
+  spec.add_dependency 'phcadmin1'
+  spec.add_dependency 'phcadmin2'
+  spec.add_dependency 'phcadmin3'
+
+  # Security, Subscriptions & Forms
+  spec.add_dependency 'bcrypt'
+  spec.add_dependency 'warden'
+  spec.add_dependency 'houser'
+  spec.add_dependency 'braintree'
+  spec.add_dependency 'dynamic_form'
 
   # Development & Testing Dependencies
-  spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
-  spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
-  spec.add_development_dependency 'capybara', '~> 2.13'
-  spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
+  spec.add_development_dependency 'rspec-rails'
+  spec.add_development_dependency 'factory_girl_rails'
+  spec.add_development_dependency 'capybara'
+  spec.add_development_dependency 'byebug'
 
-  spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
-  spec.add_development_dependency 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  spec.add_development_dependency 'sqlite3'
+  spec.add_development_dependency 'database_cleaner'
 
-  spec.add_development_dependency 'faker', '~> 1.7', '>= 1.7.3'
-  spec.add_development_dependency 'launchy', '~> 2.4', '>= 2.4.3'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.3'
+  spec.add_development_dependency 'faker'
+  spec.add_development_dependency 'launchy'
+  spec.add_development_dependency 'selenium-webdriver'
 
   # Extra Development & Testing Dependencies
   spec.add_development_dependency 'minitest', '~> 5.10', '>= 5.10.1'
