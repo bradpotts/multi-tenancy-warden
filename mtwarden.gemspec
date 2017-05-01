@@ -71,7 +71,7 @@ Gem::Specification.new do |spec|
   # Development & Testing Dependencies
   spec.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
   spec.add_development_dependency 'factory_girl_rails', '~> 4.8'
-  spec.add_development_dependency 'capybara', '~> 2.13'
+  spec.add_development_dependency 'capybara', '~> 2.14'
   spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.6'
 
   spec.add_development_dependency 'sqlite3', '~> 1.3', '>= 1.3.13'
