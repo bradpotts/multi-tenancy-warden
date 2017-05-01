@@ -9,11 +9,11 @@ module Mtwarden
   class Engine < ::Rails::Engine
 
     isolate_namespace Mtwarden
-    
+
     config.generators do |g|
       g.test_framework :rspec, :view_specs => false
     end
-    
+
     initializer "mtwarden.middleware.warden" do
       Rails.application.config.middleware.use Warden::Manager do |manager|
         manager.default_strategies :password
@@ -25,7 +25,7 @@ module Mtwarden
         end
       end
     end
-    
+
     initializer "mtwarden.middleware.fake_braintree_redirect" do
       if Rails.env.test?
         require "fake_braintree_redirect"
@@ -34,7 +34,7 @@ module Mtwarden
          FakeBraintreeRedirect
       end
     end
-    
+
     config.to_prepare do
       root = Mtwarden::Engine.root
       extenders_path = root + "app/extenders/**/*.rb"
@@ -42,7 +42,7 @@ module Mtwarden
         Rails.configuration.cache_classes ? require(file) : load(file)
       end
     end
-    
+
     initializer 'mtwarden.middleware.houser' do
       Rails.application.config.middleware.use Houser::Middleware,
       :class_name => 'Mtwarden::Account'
