@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["BradPotts"]
   spec.email       = ["info@phcnetworks.net"]
   spec.homepage    = "https://phcnetworks.net/"
-  spec.summary     = "Multi-Tenant Rails Engine Using Warden"
-  spec.description = "mtwarden(3) adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
+  spec.summary     = "Rails 5.1 Engine - MTWarden(6)"
+  spec.description = "MTWarden(6) Rails 5.1 engine adds basecamp style user logins (multi-tenant authetication using warden gem) to your ruby on rails application."
   spec.license     = "MIT"
 
   #Load Engine Files
