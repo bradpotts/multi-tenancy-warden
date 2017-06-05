@@ -4,12 +4,12 @@
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-warden/blob/master/MIT-LICENSE)
 
-### MTWarden(6) Rails 5.1 Multi-Tenancy Engine Documentation  
-PHC MTWarden(6) Rails 5.1 engine adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions, and login through subdomains using Warden authentication gem.  
+### MTWarden Rails 5.1 Multi-Tenancy Engine Documentation  
+PHC MTWarden Rails 5.1 engine adds a separate multi-tenant layer that handles all user registrations, multi-tenancy app functions, and login through subdomains using Warden authentication gem.  
 
 #### Step 1 - Add Mtwarden to your gemfile and run command   
 
-	gem 'mtwarden', '~> 6.0'
+	gem 'mtwarden', '~> 6.1', '>= 6.1.1'
 	bundle exec install  
 
 #### Step 2 - Add and migrate mtwarden database tables  
