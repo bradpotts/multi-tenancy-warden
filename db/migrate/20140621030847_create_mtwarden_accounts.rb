@@ -1,4 +1,4 @@
-class CreateMtwardenAccounts < ActiveRecord::Migration[5.0]
+class CreateMtwardenAccounts < ActiveRecord::Migration[5.1]
   def change
     create_table :mtwarden_accounts do |t|
 
