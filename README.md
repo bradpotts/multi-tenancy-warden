@@ -9,7 +9,7 @@ PHC MTWarden Rails 5.1 engine adds a separate multi-tenant layer that handles al
 
 #### Step 1 - Add Mtwarden to your gemfile and run command   
 
-	gem 'mtwarden', '~> 10.0'
+	gem 'mtwarden', '~> 11.0'
 	bundle exec install  
 
 #### Step 2 - Add and migrate mtwarden database tables  
