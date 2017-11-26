@@ -1,3 +1,3 @@
 module Mtwarden
-  VERSION = '12.0.0'
+  VERSION = '13.0.0'
 end
