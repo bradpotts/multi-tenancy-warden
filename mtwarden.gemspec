@@ -60,13 +60,13 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'phctheme2', '~> 11.0'
 
   # PHCAdmin Dependencies
-  spec.add_dependency 'phcadmin1', '~> 16.0'
+  spec.add_dependency 'phcadmin1', '~> 16.0', '>= 16.0.1'
   spec.add_dependency 'phcadmin2', '~> 14.0'
   spec.add_dependency 'phcadmin3', '~> 11.0'
 
   # Security, Subscriptions & Forms
   spec.add_dependency 'bcrypt', '~> 3.1', '>= 3.1.11'
-  spec.add_dependency 'braintree', '~> 2.80'
+  spec.add_dependency 'braintree', '~> 2.80', '>= 2.80.1'
   spec.add_dependency 'dynamic_form', '~> 1.1', '>= 1.1.4'
   spec.add_dependency 'houser', '~> 2.0'
   spec.add_dependency 'warden', '~> 1.2', '>= 1.2.7'
