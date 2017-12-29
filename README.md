@@ -1,6 +1,5 @@
 [![security](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master.svg)](https://hakiri.io/github/PHCNetworks/multi-tenancy-warden/master)
 [![Code Climate](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden/badges/gpa.svg)](https://codeclimate.com/github/PHCNetworks/multi-tenancy-warden)
-[![Dependency Status](https://gemnasium.com/badges/github.com/PHCNetworks/multi-tenancy-warden.svg)](https://gemnasium.com/github.com/PHCNetworks/multi-tenancy-warden)
 [![Gem Version](https://badge.fury.io/rb/mtwarden.svg)](https://badge.fury.io/rb/mtwarden)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/PHCNetworks/multi-tenancy-warden/blob/master/MIT-LICENSE)
 
@@ -9,7 +8,7 @@ PHC MTWarden Rails 5.1 engine adds a separate multi-tenant layer that handles al
 
 #### Step 1 - Add Mtwarden to your gemfile and run command   
 
-	gem 'mtwarden', '~> 14.0'
+	gem 'mtwarden', '~> 15.0'
 	bundle exec install  
 
 #### Step 2 - Add and migrate mtwarden database tables  
