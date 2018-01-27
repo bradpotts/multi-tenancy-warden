@@ -47,7 +47,7 @@ Gem::Specification.new do |spec|
 
   # API Dependencies
   spec.add_dependency 'multi_json', '~> 1.13'
-  spec.add_dependency 'oj', '~> 3.3'
+  spec.add_dependency 'oj', '~> 3.4'
   spec.add_dependency 'rabl', '~> 0.13.1'
   spec.add_dependency 'responders', '~> 2.4'
 
@@ -62,14 +62,14 @@ Gem::Specification.new do |spec|
 
   # Warden - Security, Subscriptions & Forms
   spec.add_dependency 'bcrypt', '~> 3.1'
-  spec.add_dependency 'braintree', '~> 2.80'
+  spec.add_dependency 'braintree', '~> 2.82'
 
   spec.add_dependency 'dynamic_form', '~> 1.1'
   spec.add_dependency 'houser', '~> 2.0'
   spec.add_dependency 'warden', '~> 1.2'
 
   # Development & Testing Dependencies
-  spec.add_development_dependency 'byebug', '~> 9.1'
+  spec.add_development_dependency 'byebug', '~> 10.0'
   spec.add_development_dependency 'capybara', '~> 2.17'
   spec.add_development_dependency 'database_cleaner', '~> 1.6'
 
