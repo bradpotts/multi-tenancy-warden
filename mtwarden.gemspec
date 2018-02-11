@@ -62,7 +62,7 @@ Gem::Specification.new do |spec|
 
   # Warden - Security, Subscriptions & Forms
   spec.add_dependency 'bcrypt', '~> 3.1'
-  spec.add_dependency 'braintree', '~> 2.82'
+  spec.add_dependency 'braintree', '~> 2.83'
 
   spec.add_dependency 'dynamic_form', '~> 1.1'
   spec.add_dependency 'houser', '~> 2.0'
@@ -78,7 +78,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'launchy', '~> 2.4'
 
   spec.add_development_dependency 'rspec-rails', '~> 3.7'
-  spec.add_development_dependency 'selenium-webdriver', '~> 3.8'
+  spec.add_development_dependency 'selenium-webdriver', '~> 3.9'
   spec.add_development_dependency 'sqlite3', '~> 1.3'
 
   spec.add_development_dependency 'nokogiri', '~> 1.8'
